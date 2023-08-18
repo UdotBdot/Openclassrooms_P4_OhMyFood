@@ -38,7 +38,7 @@
 .explo {
     background-color: #F6F6F6;
     text-align: center;
-    padding: 32px; 
+    padding: 32px 32px 67px 32px; 
     &__title {
         padding-bottom: 10px;
     }
@@ -57,3 +57,150 @@
         padding: 13px 19px;
     }
 }
+
+.tuto {
+    &__title {
+        padding-left:5px;
+    }
+   padding:32px 16px;
+   &__steps {
+    padding: 20px;
+    width: auto;
+    list-style-type: none;
+    counter-reset: OL;
+   }
+   &__step {
+    width:300px;
+    height: 20px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,.125);
+    font-weight: 500;
+    background-color: #F6F6F6;
+    text-align: left;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left:22px;
+    &:before {
+        content: counter(OL);
+        counter-increment: OL;
+        background: var(--primary-color);
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        position: absolute;
+        margin-left: -35px;
+    }
+    & span {
+        padding-left:27px;
+    }
+    & i {
+        color: #7E7E7E;
+    }
+    &--modifier i {
+        color: var(--primary-color);
+    }
+    }
+}
+
+.restos {
+    background-color: #F6F6F6;
+    .container-restos h2 {
+        margin-left:25px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+         padding:45px 0;
+         gap: 17px;
+    }
+    .card {
+        &__img {
+            width: 320px;
+            height: 190px;
+            object-fit: cover;
+            margin-left: 25px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+        &__span {
+            background-color: #99e2d0;
+            color: #1b6150;
+            padding: 0.5rem;
+            border-radius: 2px;
+            position: absolute;
+            right: 40px;
+            top: 885px;
+        }
+        &__footer {
+            width: 320px;
+            display: flex;
+            justify-content: space-between;
+            margin-top:-4px;
+            margin-left: 25px;
+            box-shadow: 0px 4px 15px 0px #0000001A;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+        &__footer i {
+            margin-top:30px;
+            padding-right: 13px;;
+            font-size: 22px;
+        }
+        &__content  {
+            display: flex;
+            flex-direction: column;
+            gap:7px;
+            margin:20px 20px;
+            & p {
+                font-size: 17px;
+                font-weight: 300;
+            }
+        }
+     }
+
+ }
+
+ .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding:22px 25px;
+    background-color: #353535;
+    color: white;
+    &__title {
+        font-family: 'Shrikhand';
+    }
+    &__list {
+        display: flex;
+        gap:10px;
+        & i {
+            font-size: 13px;
+            width: 10px;
+            margin-top: 4px;
+        }
+    }
+    .container-full {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        list-style-type:none;
+    }
+ }
+
+
+
+
+  
+
+
+
+
+
+
+
+

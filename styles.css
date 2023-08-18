@@ -38,7 +38,7 @@
 .explo {
   background-color: #F6F6F6;
   text-align: center;
-  padding: 32px;
+  padding: 32px 32px 67px 32px;
 }
 .explo__title {
   padding-bottom: 10px;
@@ -56,4 +56,136 @@
   height: 50px;
   border-radius: 25px;
   padding: 13px 19px;
+}
+
+.tuto {
+  padding: 32px 16px;
+}
+.tuto__title {
+  padding-left: 5px;
+}
+.tuto__steps {
+  padding: 20px;
+  width: auto;
+  list-style-type: none;
+  counter-reset: OL;
+}
+.tuto__step {
+  width: 300px;
+  height: 20px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  font-weight: 500;
+  background-color: #F6F6F6;
+  text-align: left;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 22px;
+}
+.tuto__step:before {
+  content: counter(OL);
+  counter-increment: OL;
+  background: var(--primary-color);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  margin-left: -35px;
+}
+.tuto__step span {
+  padding-left: 27px;
+}
+.tuto__step i {
+  color: #7E7E7E;
+}
+.tuto__step--modifier i {
+  color: var(--primary-color);
+}
+
+.restos {
+  background-color: #F6F6F6;
+}
+.restos .container-restos h2 {
+  margin-left: 25px;
+}
+.restos .cards {
+  display: flex;
+  flex-direction: column;
+  padding: 45px 0;
+  gap: 17px;
+}
+.restos .card__img {
+  width: 320px;
+  height: 190px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.restos .card__span {
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 2px;
+  position: absolute;
+  right: 40px;
+  top: 885px;
+}
+.restos .card__footer {
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -4px;
+  margin-left: 25px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.restos .card__footer i {
+  margin-top: 30px;
+  padding-right: 13px;
+  font-size: 22px;
+}
+.restos .card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 20px 20px;
+}
+.restos .card__content p {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding: 22px 25px;
+  background-color: #353535;
+  color: white;
+}
+.footer__title {
+  font-family: "Shrikhand";
+}
+.footer__list {
+  display: flex;
+  gap: 10px;
+}
+.footer__list i {
+  font-size: 13px;
+  width: 10px;
+  margin-top: 4px;
+}
+.footer .container-full {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  list-style-type: none;
 }/*# sourceMappingURL=styles.css.map */
