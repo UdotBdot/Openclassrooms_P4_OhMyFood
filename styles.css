@@ -5,9 +5,9 @@
 }
 
 :root {
-  --primary-color:#9356DC;
-  --secondary-color:#FF79DA;
-  --tertiary-color:#99E2D0;
+  --primary-color:rgba(147, 86, 220, 1);
+  --secondary-color:rgba(255, 121, 218, 1);
+  --tertiary-color:rgba(153, 226, 208, 1);
 }
 
 .header {
@@ -56,9 +56,17 @@
   height: 50px;
   border-radius: 25px;
   padding: 13px 19px;
+  text-decoration: none;
+}
+.explo__btn:hover {
+  opacity: 0.9;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.4);
 }
 
 .tuto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 32px 16px;
 }
 .tuto__title {
@@ -107,24 +115,39 @@
   color: var(--primary-color);
 }
 
+@media (min-width: 1024px) {
+  .tuto__steps {
+    display: flex;
+    gap: 25px;
+  }
+  .tuto__step {
+    width: 285px;
+  }
+}
 .restos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #F6F6F6;
 }
 .restos .container-restos h2 {
-  margin-left: 25px;
+  padding: 50px 25px 0 25px;
 }
 .restos .cards {
-  display: flex;
-  flex-direction: column;
-  padding: 45px 0;
+  padding: 20px 0 45px 0;
   gap: 17px;
+}
+.restos .card {
+  text-decoration: none;
+  position: relative;
+  color: black;
 }
 .restos .card__img {
   width: 320px;
   height: 190px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-left: 25px;
+  margin: 0 25px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -134,8 +157,8 @@
   padding: 0.5rem;
   border-radius: 2px;
   position: absolute;
-  right: 40px;
-  top: 885px;
+  left: 250px;
+  margin-top: 15px;
 }
 .restos .card__footer {
   width: 320px;
@@ -143,6 +166,7 @@
   justify-content: space-between;
   margin-top: -4px;
   margin-left: 25px;
+  margin-bottom: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -163,6 +187,13 @@
   font-weight: 300;
 }
 
+@media (min-width: 1024px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -188,4 +219,24 @@
   flex-direction: column;
   gap: 7px;
   list-style-type: none;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 60px 25px 30px 10px;
+    align-items: center;
+  }
+  .footer .container-full {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .footer .footer__title {
+    margin-left: 50px;
+  }
+  .footer .responsive-space {
+    margin-right: 25px;
+  }
 }/*# sourceMappingURL=styles.css.map */
