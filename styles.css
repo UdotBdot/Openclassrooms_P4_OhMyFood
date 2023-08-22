@@ -115,15 +115,6 @@
   color: var(--primary-color);
 }
 
-@media (min-width: 1024px) {
-  .tuto__steps {
-    display: flex;
-    gap: 25px;
-  }
-  .tuto__step {
-    width: 285px;
-  }
-}
 .restos {
   display: flex;
   flex-direction: column;
@@ -131,23 +122,25 @@
   background-color: #F6F6F6;
 }
 .restos .container-restos h2 {
-  padding: 50px 25px 0 25px;
+  padding: 50px 25px 0 10px;
 }
 .restos .cards {
-  padding: 20px 0 45px 0;
-  gap: 17px;
+  padding: 20px 0 0 0;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .restos .card {
   text-decoration: none;
   position: relative;
   color: black;
+  display: block;
+  margin-bottom: 50px;
 }
 .restos .card__img {
-  width: 320px;
+  width: 100%;
   height: 190px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 0 25px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -157,24 +150,38 @@
   padding: 0.5rem;
   border-radius: 2px;
   position: absolute;
-  left: 250px;
-  margin-top: 15px;
+  top: 10px;
+  right: 10PX;
 }
 .restos .card__footer {
-  width: 320px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: -4px;
-  margin-left: 25px;
-  margin-bottom: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  position: relative;
 }
-.restos .card__footer i {
-  margin-top: 30px;
-  padding-right: 13px;
+.restos .card__svg1 {
   font-size: 22px;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  color: transparent;
+  background-image: linear-gradient(var(--primary-color), var(--secondary-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 100ms ease;
+}
+.restos .card__svg1:hover {
+  opacity: 1;
+}
+.restos .card__svg2 {
+  font-size: 22px;
+  position: absolute;
+  right: 20px;
+  top: 25px;
 }
 .restos .card__content {
   display: flex;
@@ -187,13 +194,6 @@
   font-weight: 300;
 }
 
-@media (min-width: 1024px) {
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
 .footer {
   display: flex;
   flex-direction: column;
@@ -238,5 +238,25 @@
   }
   .footer .responsive-space {
     margin-right: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .tuto__steps {
+    display: flex;
+    gap: 25px;
+  }
+  .tuto__step {
+    width: 285px;
   }
 }/*# sourceMappingURL=styles.css.map */
