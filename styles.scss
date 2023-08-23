@@ -272,17 +272,15 @@
 
 /* Menu */ 
 .bg-grey {
-    background-color: #F6F6F6;
+    background-color: white;
 }
 img {
     max-width: 100%;
 }
 .menus {
     background-color: #F6F6F6;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
     position: relative;
-    bottom: 50px;
+    padding-bottom: 50px;
     .menu {
         &__title {
             font-family: 'Shrikhand';
@@ -344,8 +342,34 @@ img {
     text-align: center;
     margin-top: 50px;
 }
-
-
+@media (min-width: 768px) {
+    .menus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+.main-menus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .main-img {
+        height: 383px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .menuitems {
+        width: 634px;
+    }
+    .menu {
+        justify-content: center;
+    }
+}
 
 
 
