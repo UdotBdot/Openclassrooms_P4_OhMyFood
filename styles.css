@@ -320,21 +320,40 @@ img {
 }
 .menus .menuitems {
   display: flex;
-  justify-content: space-between;
   gap: 12px;
   margin: 10px;
   background-color: white;
   border-radius: 15px;
+  overflow: hidden;
+}
+.menus .menuitems__title {
   padding: 15px;
+}
+.menus .menuitems .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -60px;
+  background-color: var(--tertiary-color);
+  color: white;
+  width: 59px;
+  font-size: 20px;
+  transition: margin-right 0.5s;
+}
+.menus .menuitems:hover .check {
+  margin-right: 0;
 }
 .menus .menuitems__plate {
   font-size: 15px;
   font-weight: 300;
 }
 .menus .menuitems__price {
+  display: flex;
+  align-items: flex-end;
   font-weight: 700;
   font-size: 15px;
-  padding-top: 10px;
+  padding: 15px;
+  margin-left: auto;
 }
 
 .order-btn {
