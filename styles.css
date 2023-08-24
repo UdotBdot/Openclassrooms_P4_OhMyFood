@@ -282,6 +282,7 @@ img {
 .menus {
   background-color: #F6F6F6;
   padding-bottom: 50px;
+  white-space: nowrap;
 }
 .menus .menu {
   display: flex;
@@ -328,6 +329,11 @@ img {
 }
 .menus .menuitems__title {
   padding: 15px;
+  overflow: hidden;
+}
+.menus .menuitems__title h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menus .menuitems .check {
   display: flex;
@@ -339,6 +345,7 @@ img {
   width: 59px;
   font-size: 20px;
   transition: margin-right 0.5s;
+  flex-shrink: 0;
 }
 .menus .menuitems:hover .check {
   margin-right: 0;
@@ -346,6 +353,8 @@ img {
 .menus .menuitems__plate {
   font-size: 15px;
   font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menus .menuitems__price {
   display: flex;

@@ -280,6 +280,7 @@ img {
 .menus {
     background-color: #F6F6F6;
     padding-bottom: 50px;
+    white-space: nowrap;
     .menu {
         &__title {
             font-family: 'Shrikhand';
@@ -327,7 +328,12 @@ img {
         border-radius: 15px;
         overflow: hidden;
         &__title {
-            padding:15px
+            padding:15px;
+            overflow: hidden;
+            & h4 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
         .check {
             display: flex;
@@ -339,6 +345,7 @@ img {
             width: 59px;
             font-size: 20px;
             transition: margin-right 0.5s;
+            flex-shrink: 0;
         }
         &:hover .check {
           margin-right: 0;  
@@ -346,6 +353,8 @@ img {
         &__plate {
             font-size: 15px;
             font-weight: 300;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         &__price {
             display: flex;
