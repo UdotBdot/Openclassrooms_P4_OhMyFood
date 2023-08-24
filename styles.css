@@ -377,7 +377,7 @@ img {
   height: 80px;
   background-color: #F6F6F6;
   position: absolute;
-  top: -60px;
+  bottom: 99%;
 }
 
 @media (min-width: 768px) {
