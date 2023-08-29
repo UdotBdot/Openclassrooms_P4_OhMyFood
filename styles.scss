@@ -1,15 +1,10 @@
+@import 'SASS/abstracts/_variables.scss';
+
 * {
     margin:0;
     padding:0;
     font-family: 'Roboto', sans-serif;
 }
-
-:root {
-    --primary-color:rgba(147, 86, 220, 1);
-    --secondary-color:rgba(255, 121, 218, 1);
-    --tertiary-color:rgba(153, 226, 208, 1);
-}
-
 .header {
     text-align: center;
     box-shadow: 0 0 0.5rem rgba(0,0,0,.25);
@@ -281,6 +276,9 @@ img {
     background-color: #F6F6F6;
     padding-bottom: 50px;
     white-space: nowrap;
+    border-radius: 25px;
+    position: relative;
+    margin-top: -30px;
     .menu {
         &__title {
             font-family: 'Shrikhand';
@@ -371,24 +369,15 @@ img {
     margin-top: 50px;
 }
 
-.round-header {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    width: 100%;
-    height: 80px;
-    background-color: #F6F6F6;
-    position: absolute;
-    bottom: 99%;
-}
+
 @media (min-width: 768px) {
     .menus {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 50%;
-        padding-left: 150px;
-        padding-right: 150px;
+        max-width: 1055px;
+        width: 90%;
         position:relative;
     }
 .main-menus {
