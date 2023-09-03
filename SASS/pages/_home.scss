@@ -79,7 +79,6 @@
 .restos {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: #F6F6F6;
     .container-restos h2 {
         padding:50px 25px 0 10px;
@@ -164,6 +163,12 @@
     .card {
         max-width: 450px;
         width: 100%;
+    }
+ }
+
+ @media (min-width: 768px) {
+    .restos {
+        align-items: center;
     }
  }
  

@@ -184,7 +184,6 @@
 .restos {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #F6F6F6;
 }
 .restos .container-restos h2 {
@@ -269,6 +268,11 @@
   .card {
     max-width: 450px;
     width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .restos {
+    align-items: center;
   }
 }
 /* Pages des Menus */
