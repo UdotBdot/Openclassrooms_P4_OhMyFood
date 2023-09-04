@@ -4,6 +4,14 @@
   --tertiary-color:rgba(153, 226, 208, 1);
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -353,6 +361,7 @@ img {
   background-color: white;
   border-radius: 15px;
   overflow: hidden;
+  animation: appear 1s linear;
 }
 .menus .menuitems__title {
   padding: 15px;

@@ -249,6 +249,7 @@ img {
         background-color: white;
         border-radius: 15px;
         overflow: hidden;
+        animation: appear 1s linear;
         &__title {
             padding:15px;
             overflow: hidden;
