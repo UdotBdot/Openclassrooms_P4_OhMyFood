@@ -408,33 +408,6 @@ img {
   animation: appear 1s linear;
   animation-fill-mode: backwards;
 }
-.menus .menuitems:nth-child(1) {
-  animation-delay: 60ms;
-}
-.menus .menuitems:nth-child(2) {
-  animation-delay: 120ms;
-}
-.menus .menuitems:nth-child(3) {
-  animation-delay: 180ms;
-}
-.menus .menuitems:nth-child(4) {
-  animation-delay: 240ms;
-}
-.menus .menuitems:nth-child(5) {
-  animation-delay: 300ms;
-}
-.menus .menuitems:nth-child(6) {
-  animation-delay: 360ms;
-}
-.menus .menuitems:nth-child(7) {
-  animation-delay: 420ms;
-}
-.menus .menuitems:nth-child(8) {
-  animation-delay: 480ms;
-}
-.menus .menuitems:nth-child(9) {
-  animation-delay: 540ms;
-}
 .menus .menuitems__title {
   padding: 15px;
   overflow: hidden;

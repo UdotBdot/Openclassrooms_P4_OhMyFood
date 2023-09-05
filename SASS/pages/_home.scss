@@ -251,11 +251,6 @@ img {
         overflow: hidden;
         animation: appear 1s linear;
         animation-fill-mode: backwards;
-        @for $i from 1 through 9 {
-            &:nth-child(#{$i}){
-              animation-delay: $i * 60ms;
-            }
-          }
         &__title {
             padding:15px;
             overflow: hidden;
