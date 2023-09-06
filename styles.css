@@ -124,6 +124,8 @@ body {
 }
 .footer__title {
   font-family: "Shrikhand";
+  text-decoration: none;
+  color: white;
 }
 .footer__list {
   display: flex;

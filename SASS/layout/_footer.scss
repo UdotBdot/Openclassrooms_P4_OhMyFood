@@ -7,6 +7,8 @@
     color: white;
     &__title {
         font-family: 'Shrikhand';
+        text-decoration: none;
+        color: white;
     }
     &__list {
         display: flex;
