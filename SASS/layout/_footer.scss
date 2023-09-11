@@ -13,6 +13,10 @@
     &__list {
         display: flex;
         gap:10px;
+        &--mail a {
+            text-decoration: none;
+            color: white;
+        }
         & i {
             font-size: 13px;
             width: 10px;
