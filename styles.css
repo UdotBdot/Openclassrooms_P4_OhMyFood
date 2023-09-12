@@ -387,7 +387,6 @@ img {
   font-size: 22px;
   position: absolute;
   display: inline-flex;
-  right: 40px;
 }
 .menus .menu__svg1 {
   color: transparent;
@@ -500,7 +499,5 @@ img {
   }
   .menu__svg2, .menu__svg1 {
     position: absolute;
-    left: 300px;
-    width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */
